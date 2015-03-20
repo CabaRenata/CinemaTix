@@ -7,12 +7,12 @@ import java.util.List;
  * Created by cabar on 3/20/2015.
  */
 public class Movie {
-    public Integer movieId;
-    public String title;
-    public Date aparitionDate;
-    public String director;
-    public List<Actor> actors;
-    public String trailer;
+    private Integer movieId;
+    private String title;
+    private Date aparitionDate;
+    private String director;
+    private List<Actor> actors;
+    private String trailer;
 
     public Movie(Integer movieId, String title, Date aparitionDate, String director, List<Actor> actors, String trailer) {
         this.movieId = movieId;
@@ -69,5 +69,21 @@ public class Movie {
 
     public void setTrailer(String trailer) {
         this.trailer = trailer;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Movie)) return false;
+
+        Movie movie = (Movie) o;
+
+        if (!actors.equals(movie.actors)) return false;
+        if (!aparitionDate.equals(movie.aparitionDate)) return false;
+        if (!director.equals(movie.director)) return false;
+        if (!title.equals(movie.title)) return false;
+        if (!trailer.equals(movie.trailer)) return false;
+
+        return true;
     }
 }

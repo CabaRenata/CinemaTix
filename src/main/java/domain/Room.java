@@ -4,9 +4,9 @@ package domain;
  * Created by cabar on 3/20/2015.
  */
 public class Room {
-    public Integer roomId;
-    public String name;
-    public String description;
+    private Integer roomId;
+    private String name;
+    private String description;
 
     public Room(Integer roomId, String name, String description) {
         this.roomId = roomId;
@@ -36,5 +36,18 @@ public class Room {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Room)) return false;
+
+        Room room = (Room) o;
+
+        if (!description.equals(room.description)) return false;
+        if (!name.equals(room.name)) return false;
+
+        return true;
     }
 }

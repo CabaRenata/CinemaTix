@@ -4,14 +4,16 @@ package domain;
  * Created by cabar on 3/20/2015.
  */
 public class User {
-    public String username;
-    public String password;
-    public String firstName;
-    public String lastName;
-    public String emailAddress;
-    public String telephoneNumber;
+    private Integer userId;
+    private String username;
+    private String password;
+    private String firstName;
+    private String lastName;
+    private String emailAddress;
+    private String telephoneNumber;
 
-    public User(String username, String password, String firstName, String lastName, String emailAddress, String telephoneNumber) {
+    public User(Integer userId, String username, String password, String firstName, String lastName, String emailAddress, String telephoneNumber) {
+        this.userId = userId;
         this.username = username;
         this.password = password;
         this.firstName = firstName;
@@ -19,6 +21,10 @@ public class User {
         this.emailAddress = emailAddress;
         this.telephoneNumber = telephoneNumber;
     }
+
+    public Integer getUserId() { return userId; }
+
+    public void setUserId(Integer userId) { this.userId = userId; }
 
     public String getUsername() {
         return username;
@@ -66,5 +72,22 @@ public class User {
 
     public void setTelephoneNumber(String telephoneNumber) {
         this.telephoneNumber = telephoneNumber;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+
+        User user = (User) o;
+
+        if (!emailAddress.equals(user.emailAddress)) return false;
+        if (!firstName.equals(user.firstName)) return false;
+        if (!lastName.equals(user.lastName)) return false;
+        if (!password.equals(user.password)) return false;
+        if (!telephoneNumber.equals(user.telephoneNumber)) return false;
+        if (!username.equals(user.username)) return false;
+
+        return true;
     }
 }

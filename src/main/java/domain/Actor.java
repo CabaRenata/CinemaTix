@@ -4,9 +4,9 @@ package domain;
  * Created by cabar on 3/20/2015.
  */
 public class Actor {
-    public Integer actorId;
-    public String firstName;
-    public String lastName;
+    private Integer actorId;
+    private String firstName;
+    private String lastName;
 
     public Actor(Integer actorId, String firstName, String lastName) {
         this.actorId = actorId;
@@ -37,4 +37,19 @@ public class Actor {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Actor)) return false;
+
+        Actor actor = (Actor) o;
+
+        if (!actorId.equals(actor.actorId)) return false;
+        if (!firstName.equals(actor.firstName)) return false;
+        if (!lastName.equals(actor.lastName)) return false;
+
+        return true;
+    }
+
 }
