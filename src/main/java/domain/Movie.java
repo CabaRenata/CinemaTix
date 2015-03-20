@@ -9,15 +9,15 @@ import java.util.List;
 public class Movie {
     private Integer movieId;
     private String title;
-    private Date aparitionDate;
+    private Date releasedDate;
     private String director;
     private List<Actor> actors;
     private String trailer;
 
-    public Movie(Integer movieId, String title, Date aparitionDate, String director, List<Actor> actors, String trailer) {
+    public Movie(Integer movieId, String title, Date releasedDate, String director, List<Actor> actors, String trailer) {
         this.movieId = movieId;
         this.title = title;
-        this.aparitionDate = aparitionDate;
+        this.releasedDate = releasedDate;
         this.director = director;
         this.actors = actors;
         this.trailer = trailer;
@@ -40,11 +40,11 @@ public class Movie {
     }
 
     public Date getAparitionDate() {
-        return aparitionDate;
+        return releasedDate;
     }
 
     public void setAparitionDate(Date aparitionDate) {
-        this.aparitionDate = aparitionDate;
+        this.releasedDate = aparitionDate;
     }
 
     public String getDirector() {
@@ -79,7 +79,7 @@ public class Movie {
         Movie movie = (Movie) o;
 
         if (!actors.equals(movie.actors)) return false;
-        if (!aparitionDate.equals(movie.aparitionDate)) return false;
+        if (!releasedDate.equals(movie.releasedDate)) return false;
         if (!director.equals(movie.director)) return false;
         if (!title.equals(movie.title)) return false;
         if (!trailer.equals(movie.trailer)) return false;
