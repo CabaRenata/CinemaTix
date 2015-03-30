@@ -1,0 +1,308 @@
+.main-panel {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tmpl-header,.tmpl-footer {
+    height: auto;
+    width: 800px;
+    border-bottom: 10px solid #ffffff;
+}
+
+.tmpl-body {
+    height: auto;
+    width: 800px;
+}
+
+.yui3-button {
+    font-size: 75% !important;
+}
+
+table {
+    margin-bottom: 10px;
+}
+
+.selectBirthDateBtn {
+    float: left;
+    clear: left;
+}
+
+.errorMsg {
+    font-size: 0.75em;
+    color: red;
+}
+
+.popup {
+    z-index: 10;
+    position: relative;
+    height: 250px;
+    width: 300px;
+    margin-left: 100px;
+}
+
+body {
+    background-image:
+        url('http://www.hdwallpapers.in/walls/blue_sky-wide.jpg');
+    background-size: 100%;
+}
+
+#header {
+    /*border-bottom: 10px solid #ffffff;*/
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: bold;
+    text-shadow: gray 0.20em 0.20em 0.20em;
+    margin: 0 0 0 0;
+    padding: 0;
+    text-align: center;
+    min-height: 200px;
+    /*background: #ffffff no-repeat center url('http://pacificinsurance.me/wp-content/uploads/2013/02/car_banner1.jpg');
+    */
+}
+
+#footer {
+    /*border-bottom: 10px solid #ffffff;*/
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: bold;
+    text-shadow: grey 0.20em 0.20em 0.20em;
+    margin: 0 0 0.20em 0;
+    text-align: center;
+}
+
+.sub_menu1 li {
+    color: #ffffff;
+}
+
+.menu ul {
+    margin: 0px;
+}
+
+.menu li {
+    margin: 0px 7px 0px 0px;
+    list-style-type: none;
+}
+
+.datatable {
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: lighter;
+}
+
+label {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: bold;
+    text-shadow: grey 0.20em 0.20em 0.20em;
+    margin: 0 0 0.20em 0;
+    text-align: center;
+    font-size: 150%;
+}
+
+.datatable2 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: nermal;
+    text-align: center;
+    /*border:2px solid white;
+    padding:12px;*/
+}
+
+.datatable2  tr th {
+    color: #A00000;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: bold;
+    text-shadow: white 0.20em 0.20em 0.20em;
+    margin: 0 0 0.20em 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 115%;
+}
+
+.datatable  tr th {
+    color: #A00000;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: bold;
+    text-shadow: white 0.20em 0.20em 0.20em;
+    margin: 0 0 0.20em 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 115%;
+    border-bottom: 1px solid #fff;
+}
+
+.updCar {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: bold;
+}
+
+.updCar2 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: bold;
+}
+
+.carTable2 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: normal;
+}
+
+.carTable {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: normal;
+}
+
+.registerTable {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: normal;
+    text-align: center;
+}
+
+.registerTable2 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: normal;
+}
+
+.login Link {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: normal;
+    text-decoration: none;
+}
+
+.login {
+    text-align: center;
+}
+
+.login2 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    front-weight: normal;
+    text-decoration: none;
+    tex-align: center;
+}
+
+a:link,a:visited {
+    text-decoration: none;
+    color: white;
+    front-weight: bold;
+    text-shadow: grey 0.20em 0.20em 0.20em;
+    margin: 0 0 0.20em 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover,a:active {
+    /*text-decoration:underline overline;*/
+    color: red;
+    front-weight: bold;
+    text-shadow: white 0.20em 0.20em 0.20em;
+    margin: 0 0 0.20em 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navMenu {
+    margin: 0;
+    padding: 0;
+}
+
+#navMenu ul {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+#navMenu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+#navMenu ul li a {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+}
+
+#navMenu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+#navMenu ul li:hover ul {
+    visibility: visible;
+}
+
+p.menu-category {
+    font-size: 30pt;
+}
+
+.clockStyle {
+    border: #99 2px inset;
+    padding: 6px;
+    /*color:30FF;*/
+    color: white;
+    font-family: "Arial, Helvetica, sans-serif", Gadget, sans-seif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline;
+}
+
+.dateStyle {
+    border: #99 2px inset;
+    padding: 6px;
+    /*color:30FF;*/
+    color: white;
+    font-family: "Arial, Helvetica, sans-serif", Gadget, sans-seif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline;
+}
+
+p {
+    padding: 10px 20px;
+}
+
+div.mydivs {
+    width: 500px;
+    height: 0px;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+div.mydivs>li {
+    padding: 4px 16px;
+}
+
+.cartable {
+    padding: 0;
+    border-spacing: 0;
+    border: 1px solid #fff;
+}
+
+.cartable td {
+    margin: 0;
+    min-width: 30px;
+    border: 1px solid #fff;
+}
+
+.cartable th {
+    border: 2px solid #fff;
+    padding: 3px 10px 3px 10px;
+}
+
+#userinfo {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
